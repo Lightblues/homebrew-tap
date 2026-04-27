@@ -1,9 +1,9 @@
 cask "nexus" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.5.1"
-  sha256 arm:   "0832584958796ccdfa63f46955e36f1ffda51a59d7e4434d3f5153583bca57f0",
-         intel: "95e69d7ba569289e9a3ea2180b0dc8aea696cf649f09847875e0074d38e44d43"
+  version "0.6.0"
+  sha256 arm:   "a8f181540f2cc10c7b25de6f1cc422e606847c5452fc822578b9db740bdbc344",
+         intel: "c93026d3da0c744d5e9252b45f90b4475080c54eca930866e0b3c8caddb2cad8"
 
   url "https://github.com/Lightblues/nexus/releases/download/nexus-v#{version}/Nexus-#{version}-#{arch}.dmg"
   name "Nexus"
