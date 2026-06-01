@@ -1,6 +1,6 @@
 cask "nexus" do
-  version "1.0.0"
-  sha256 "f5f0c5158849e16f52f41b25706ba449d943853a2e0d3a71315d97cb5de126b2"
+  version "1.1.0"
+  sha256 "f862c220046053569ce332a1df9f89a509d1814ea34c3ff310a3f77727740f5d"
 
   # Universal binary (arm64 + x86_64). Single DMG covers both architectures.
   url "https://github.com/Lightblues/nexus/releases/download/nexus-v#{version}/Nexus-#{version}.dmg"
