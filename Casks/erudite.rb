@@ -1,6 +1,6 @@
 cask "erudite" do
-  version "1.0.0"
-  sha256 "8ff94a715df072ab37907bc5fd54df0fa75133004b08525dffddb9d0cc011d25"
+  version "1.0.1"
+  sha256 "66df60e9fa3c1aa43ca4bd3bf4465b870f7048a9e3591f8b5e9d56ee1453316d"
 
   # Universal binary (arm64 + x86_64). Single DMG covers both architectures.
   # The all-zero sha256 is a placeholder; the first CI release will rewrite it.
