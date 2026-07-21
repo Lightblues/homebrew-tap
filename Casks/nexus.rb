@@ -15,7 +15,7 @@ cask "nexus" do
   end
 
   auto_updates false
-  depends_on macos: ">= :ventura"   # Swift port requires macOS 13+
+  depends_on macos: :ventura # Swift port requires macOS 13+
 
   app "Nexus.app"
 

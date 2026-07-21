@@ -16,7 +16,7 @@ cask "erudite" do
   end
 
   auto_updates false
-  depends_on macos: ">= :sonoma"   # SwiftUI @Observable requires macOS 14+
+  depends_on macos: :sonoma # SwiftUI @Observable requires macOS 14+
 
   app "Erudite.app"
 
