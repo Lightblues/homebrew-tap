@@ -6,7 +6,7 @@ cask "erudite" do
   # The all-zero sha256 is a placeholder; the first CI release will rewrite it.
   url "https://github.com/Lightblues/erudite/releases/download/erudite-v#{version}/Erudite-#{version}.dmg"
   name "Erudite"
-  desc "AI-native macOS app for GRE vocabulary learning"
+  desc "AI-native app for GRE vocabulary learning"
   homepage "https://github.com/Lightblues/erudite"
 
   livecheck do
