@@ -1,6 +1,6 @@
 cask "nexus@beta" do
-  version "1.3.1-beta.33"
-  sha256 "4f0acb5f2fd8a03a56325ed2654597152c46398556485aa582167ceac8602cb2"
+  version "1.3.1-beta.34"
+  sha256 "2e6e75b29e386f27e221fd528701c47b620f5711b07fe09516b03396c8e63297"
 
   url "https://github.com/Lightblues/nexus/releases/download/nexus-beta/Nexus-#{version}.dmg"
   name "Nexus (beta)"
