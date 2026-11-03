@@ -1,0 +1,15 @@
+# Decisions
+
+Append-only. Reverse an entry by adding a new one; change only the old entry's status line.
+
+## D001. A reference copy lives on devcloud_cpu
+
+**Date**: 2026-11-03　**Status**: active
+
+The tap is cloned to `/data/projects/app/homebrew-tap` so coding agents working on `nexus` and `erudite` on devcloud_cpu can read how the casks and the release workflows fit together. Casks cannot be installed or audited there (no macOS); the Mac clone stays the place to run `brew`. Commits made on devcloud_cpu are possible but the CI bot writes to `main` often, so always `git pull` first.
+
+## D002. The Nexus casks are owned by the nexus repository's workflows
+
+**Date**: 2026-11-03　**Status**: active
+
+`build.yml` regenerates `Casks/nexus.rb` and `Casks/nexus@beta.rb` in full, so this repository does not carry the source of truth for them. Alternative considered: have CI patch only `version` and `sha256` and keep the rest hand-edited here; not adopted because that is how the workflows are written today and changing them is a separate task in `Lightblues/nexus`. `erudite.rb` is the only cask maintained here.
