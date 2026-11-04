@@ -1,11 +1,11 @@
 # homebrew-tap
 
-Personal Homebrew tap `lightblues/tap` for the user's macOS apps. Three casks: `nexus` (stable), `nexus@beta` (rolling build of Nexus main), `erudite`.
+Personal Homebrew tap `lightblues/tap` for the user's macOS apps. Two casks: `nexus` (stable), `nexus@beta` (rolling build of Nexus main).
 Most commits are made by `github-actions[bot]` from the Nexus repository's workflows; a human edits this repository rarely.
 
 ## Quick Reference
 
-- **Use**: `brew tap lightblues/tap`, then `brew install --cask nexus` (or `nexus@beta`, `erudite`)
+- **Use**: `brew tap lightblues/tap`, then `brew install --cask nexus` (or `nexus@beta`)
 - **Where**: devcloud_cpu `/data/projects/app/homebrew-tap` (reference copy for coding agents; casks are only installable on a Mac)
 - **Check a cask**: `brew audit --cask --online lightblues/tap/<name>` and `brew style Casks/` on a Mac; there is no CI here
 - **Docs**: `.ea/docs/README.md` (how the casks are updated, per-cask facts), `.ea/roadmap.md`, `.ea/log/decisions.md`; layout follows forge-run `references/ea-layout.md`
